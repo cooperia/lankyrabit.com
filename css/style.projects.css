@@ -1,0 +1,43 @@
+#projects_wrapper p, #projects_wrapper ul li {
+	font-family:helvetica, arial, sans-serif;
+	font-size:1.4em;
+	width:100%;
+}
+
+.project_wrapper {
+	width:100%;
+	margin-bottom:2em;
+}
+
+.project_title {
+	margin-bottom:1em;
+	width:60%;
+}
+
+.project_title a, .project_title span {
+	font-size:2em;
+	font-weight:bold;
+	color:#587498;
+	text-decoration:none;
+	margin:0em;
+	padding:0em;
+	
+}
+
+.project_img {
+	width:35%;
+	margin:0% 0% 1em 5%;
+}
+
+.project_img img {
+	border:.3em solid #587498;
+}
+
+ul.project_list {
+	list-style-type:disc;
+	margin-left:1.5em;
+}
+
+.project_list li {
+	margin-bottom:.5em;
+}

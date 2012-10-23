@@ -1,0 +1,106 @@
+
+
+#resume_wrapper {
+	width:100%;
+}
+
+#resume_wrapper p {
+	font-family:helvetica, arial, sans-serif;
+	font-size:1.4em;
+	color:#333333;
+	margin:0em 0em .1em 0em;
+	line-height:1em;
+}
+
+#resume_wrapper a {
+	color:#333333;
+	font-size:1.4em;
+}
+
+#resume_wrapper h1 {
+	font-size:1.8em;
+	font-weight:bold;
+	color:#333333;
+	margin:0em;
+}
+
+#resume_wrapper h2 {
+	font-size:1.6em;
+	font-weight:bold;
+	color:#333333;
+	margin:0em 0em .1em 0em;
+}
+
+.resume_sectionTitle {
+	width:100%;
+	margin-bottom:.1em;
+}
+
+.resume_section {
+	margin-bottom:1em;
+}
+
+div.resume_underline {
+	border-bottom: 2px solid #587498;
+}
+
+ul.resume_outerList {
+	list-style-type:disc;
+	padding-left:3em;
+}
+
+ul.resume_innerList {
+	list-style-type:circle;
+	padding-left:3em;
+}
+
+.resume_experienceWrap {
+	margin-bottom:2em;
+}
+
+
+/*Header*/
+
+#resume_header {
+	vertical-align:top;
+}
+
+#resume_header .rightFloat {
+	width:97%;
+}
+
+#resume_name {
+	width:100%;
+	margin-bottom:.5em;
+}
+
+p#resume_i {
+	font-size:6em;
+	color:#587498;
+	font-weight:bold;
+	font-family:'Trajan Pro', times, georgia, serif;
+	width:3%;
+	
+}
+
+#resume_contact {
+	text-align:right;
+}
+
+.fifty {
+	width:45%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

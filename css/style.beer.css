@@ -1,0 +1,133 @@
+
+#beerWrap {
+}
+
+#bubbleWrap {
+	z-index:0;
+	line-height:0em;
+	background-color:#ac7100;
+	width:100%;
+	border-radius: 1em; 
+	-moz-border-radius: 1em; 
+	-webkit-border-radius: 1em;
+}
+
+b
+
+.bubble_hidden {
+	display:none;
+	position:absolute;
+}
+
+.circle {
+    -webkit-border-radius: 999px;
+    -moz-border-radius: 999px;
+    border-radius: 999px;
+    behavior: url(pie/PIE.htc);
+	background: #333333; /* Old browsers */
+	background: -moz-linear-gradient(-45deg,  #333333 0%, #ffffff 15%, #ffffff 77%, #ffffff 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#333333), color-stop(15%,#ffffff), color-stop(77%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(-45deg,  #333333 0%,#ffffff 15%,#ffffff 77%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(-45deg,  #333333 0%,#ffffff 15%,#ffffff 77%,#ffffff 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(-45deg,  #333333 0%,#ffffff 15%,#ffffff 77%,#ffffff 100%); /* IE10+ */
+	background: linear-gradient(135deg,  #333333 0%,#ffffff 15%,#ffffff 77%,#ffffff 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
+	
+}
+
+.attached {
+	/* Required for IE 5, 6, 7 */
+	/* ...or something to trigger hasLayout, like zoom: 1; */
+	width: 100%; 
+
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=80);
+
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.8;
+
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.8;
+
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.8;
+
+}
+
+.rising {
+	/* Required for IE 5, 6, 7 */
+	/* ...or something to trigger hasLayout, like zoom: 1; */
+	width: 100%; 
+
+	/* Theoretically for IE 8 & 9 (more valid) */	
+	/* ...but not required as filter works too */
+	/* should come BEFORE filter */
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+
+	/* This works in IE 8 & 9 too */
+	/* ... but also 5, 6, 7 */
+	filter: alpha(opacity=65);
+
+	/* Older than Firefox 0.9 */
+	-moz-opacity:0.65;
+
+	/* Safari 1.x (pre WebKit!) */
+	-khtml-opacity: 0.65;
+
+	/* Modern!
+	/* Firefox 0.9+, Safari 2?, Chrome any?
+	/* Opera 9+, IE 9+ */
+	opacity: 0.65;
+}
+
+.miniBub {
+	position:absolute;
+	width:2px;
+	height:2px;
+	left:14px;
+	top:14px;
+}
+
+.popText {
+	text-align:center;
+	margin-top: 11px;
+	margin-left:auto;
+	margin-right:auto;
+	color:#ffffff;
+}
+
+.bubble {
+	position:absolute;
+	width:2px;
+	height:2px;
+	z-index:0;
+}
+
+#mug {
+	position:relative;
+	z-index:999;
+	border-radius: 1em; 
+	-moz-border-radius: 1em; 
+	-webkit-border-radius: 1em;
+	border:1em solid #587498;
+}
+
+#bubbleWrap figure {
+	width:100%;
+}
+
+.bubbles_subHeader {
+	font-size:2em;
+	font-weight:bold;
+	margin: 1em 0em;
+	color:#587498;
+}

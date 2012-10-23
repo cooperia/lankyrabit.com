@@ -1,0 +1,186 @@
+<!Doctype html>
+<html language="en">
+  <head>
+    <title>Ian's Playground</title>
+	<meta charset="UTF-8" />
+	<link media="screen" type="text/css" rel="stylesheet" href="css/style.main.css" />
+	<link media="screen" type="text/css" rel="stylesheet" href="css/style.mediaQuery.css" />
+	<link media="screen" type="text/css" rel="stylesheet" href="css/style.resume.css" />
+	<link media="screen" type="text/css" rel="stylesheet" href="css/style.projects.css" />
+	<link media="screen" type="text/css" rel="stylesheet" href="css/style.beer.css" />
+	
+	<!-- enable HTML5 elements in IE7+8 -->
+	<!-- [if lt IE 9]>
+	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+	
+	
+	<!--[if IE]>
+	<style type="text/css">
+		#infoWrapper {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#647b3c75,endColorstr=#647b3c75);
+	       zoom: 1;
+		}
+	</style>
+	<![endif]-->
+	
+	<style type="text/css">
+		@media all and (max-width: 820px){
+	  		nav[role='navigation'] ul li a {
+				font-size:1.2em;
+			}
+			
+			#buttons a {
+				font-size:1.1em;
+			}
+		}
+	</style>
+  </head>
+  <body>
+	<div id="wrapper">
+		<div id="topFixed" class="wrapper fixed">
+			<div id="headWrapper" class="shadow">
+				<div id="header">
+					<figure><img src="images/R.gif" id="logo"></figure>
+					<h1>Ian Cooper</h1>
+					<p id="lankyrabit">lankyrabit.com</p>
+				</div>
+			</div>
+			<nav role="navigation" class="shadow">
+				<ul>
+					<li><a href="otherProjects.html" id="other">Other Projects</a></li>
+					<li><a href="bubbles.html" id="bubbles">Bubbles</a></li>
+					<li><a href="resume.html" id="resume">Resume</a></li>
+					<li><a href="index.html" id="home">Home</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="contentWrapper" role="main">
+			<div id="loading_zone" class="leftFloat">
+				<div id="projects_wrapper">
+						<article class="project_wrapper box">
+							<dt class="project_title box leftFloat">
+								<a href="http://bartonarch.com">Bart's Portfolio</a>
+							</dt>
+							<dd class="project_img box rightFloat">
+								<a href="http://bartonarch.com"><figure><img src="images/bartsPort.jpg" class="box"></figure></a>
+							</dd>
+							<dd class="project_description box">
+								<p>I built this site as a favor for a friend of mine. He has a degree in Architecture and needed his portfolio rebuilt and updated with recent projects. The design was entirely his - I gave advice on structure, functional animations, and eventually rebuilt the site from the ground up. I have learned a lot since I built the site - I have learned a lot since then. Here are a few things I learned from or would like to improve upon in the future:</p>
+								<ul class="project_list">
+									<li>The navigation is entirely Javascript based right now. I would like to build in static link backup for web crawlers as well as make it usable for anyone who doesn't have Javascript enabled.</li>
+									<li>
+										The Javascript that I used for navigation works - however, it certainly isn't as efficient as it could be. The current implementation simply checks for a hash change on an interval and acts accordingly. I have learned to use HTML5's History API since completing the site. It's use could greatly increase stability.
+									</li>
+									<li>
+										I used em's for my base unit of measurement. This has its advantages for some designs, but the right-side navigation presented a significant challenge in the cross-browser arena. In the future, I will keep this in mind when deciding how to proceed with someone else's design. 
+									</li>
+									<li>
+										I would like to extend my use of HTML5 in general. Link prefetching would be very beneficial for all the images that make up Bart's Portfolio.
+									</li>
+								</ul>
+							</dd>
+							<div class="clear"></div>
+						</article>
+						<article class="project_wrapper box">
+							<dt class="project_title box leftFloat">
+								<a href="https://www.facebook.com/MeeshaAndBriansWedding/app_277683662322884">Countdown</a>
+							</dt>
+							<dd class="project_img box rightFloat">
+								<a href="https://www.facebook.com/MeeshaAndBriansWedding/app_277683662322884"><figure><img src="images/countdown.jpg" class="box"></figure></a>
+							</dd>
+							<dd class="project_description box">
+								<p>One of my close friends had a wedding, and I chose to use it as an excuse to practice a few things. This countdown originally ended at the date of their wedding, but I have since changed it to the New Year. This was a very rough piece of Javascript behind a fun opportunity to do some Photoshop work and teach myself a few things about HTML and CSS. I will focus on the things I would like to change in the Javascript:</p>
+								<ul class="project_list">
+									<li>Currently, the countdown has no logic to handle reaching its destination. Instead, it just keeps decrementing and it doesn't do THAT well. These are just simple oversights on my part and were probably intentional as I didn't intend it to live on, but it would be nice to build these features in for future use.</li>
+									<li>
+										Since I built this, I have learned a lot about Javascript. I read 'Javascript: The Good Parts' by Douglas Crockford and have been itching to put what I learned to use. This project could benefit from a complete overhaul in light of my new knowledge of the prototype model and objects in Javascript. 
+									</li>
+
+								</ul>
+							</dd>
+							<div class="clear"></div>
+						</article>
+						<article class="project_wrapper box">
+							<dt class="project_title box leftFloat">
+								<a href="https://www.facebook.com/MeeshaAndBriansWedding/app_324908094241151">Wedding Party</a>
+							</dt>
+							<dd class="project_img box rightFloat">
+								<a href="https://www.facebook.com/MeeshaAndBriansWedding/app_324908094241151"><figure><img src="images/party.jpg" class="box"></figure></a>
+							</dd>
+							<dd class="project_description box">
+								<p>This project originated from the same motivation as the countdown app. This was one of my first stabs at Javascript as a method for presenting information - AKA AJAX. This app is essentially just a bunch of get requests. I used AJAX a bit in College at WCTS, but the majority of my loading and querying was done in Coldfusion.</p>
+								<p>This app could greatly benefit from use of the HTML5 History API as well as link prefetching for images.</p>
+							</dd>
+							<div class="clear"></div>
+						</article>
+						<article class="project_wrapper box">
+							<dt class="project_title box leftFloat">
+								<span>Rails API app</span>
+							</dt>
+							<dd class="project_img box rightFloat">
+								<figure><img src="images/rails.gif" class="box"></figure>
+							</dd>
+							<dd class="project_description box">
+								<p>I built this to help me with reporting at American Winery. I routinely had to compile reports from both our email platform and Google Analytics, and it was very tedious to extract the necessary data from both sources and compile it in a meaningful way. This app communicated with both platforms and used parameters pulled from the email platform to query GA. Unfortunately, it would be remiss of me to put the app on Github so you will just have to take my word on its existence and function!</p>
+								<p>I have no illusions about the ninja-ness of this app. Suffice it to say, I can read and edit Ruby/Rails and have built simple things in it, but I am no rails guru. </p>
+							</dd>
+							<div class="clear"></div>
+						</article>
+						<article class="project_wrapper box">
+							<dt class="project_title box leftFloat">
+								<a href="https://github.com/cooperia/Intro-and-Datastructures-HW">HomeWork from College</a>
+							</dt>
+							<dd class="project_img box rightFloat">
+								<a href="https://github.com/cooperia/Intro-and-Datastructures-HW"><figure><img src="images/C++.gif" class="box"></figure></a>
+							</dd>
+							<dd class="project_description box">
+								<p>If you are interested in looking at any of my homework from college, I have put all my assignments on Github.</p>
+							</dd>
+							<div class="clear"></div>
+						</article>
+				</div>
+			</div>
+			<div id="buttons" class="rightFloat">
+				<a href="../Resources/Resume.pdf.zip" ><p class="text_shadow">Download Resume</p></a>
+				<figure class="inactive"><a href="http://www.linkedin.com/pub/ian-cooper/1a/764/b28"><img  src="images/linkedin.png"></a></figure>
+				<figure class="inactive"><a href="https://github.com/cooperia"><img src="images/github.png"></a></figure>
+				<figure class="inactive"><a href="mailto:cooperia14@lankyrabit.com"><img  src="images/mail.png"></a></figure>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div id="footer" role="contentinfo">
+			<p>This is a footer. This site was made by some guy named Ian.</p>
+		</div>
+	
+		<script type="text/javascript" src="javascript/jquery-1.7.1.js"></script>
+		<script type="text/javascript" src="javascript/animations.js"></script>
+		<script src="javascript/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
+		<script src="javascript/jquery.waitforimages.js"></script>
+		<script type="text/javascript">
+			//Use history.js plugin for navigation - push state, load new content
+			History.Adapter.bind(window,'popstate',function(){ 
+			        var state = History.getState(); 
+					state = 'target='+state.data.state;
+					$.get('contents.php', state, function(data){
+						if(state == 'target=bubbles'){
+							clearInterval(spawnInterval);
+							$('#loading_zone').html(data).waitForImages(startBubbles());
+						}
+						else{
+							$('#loading_zone').html(data);
+							
+						}
+						
+					});
+			});
+		</script>
+		<script type="text/javascript" src="javascript/bubbles.js"></script>
+    	<script type="text/javascript" src="javascript/javascript.js?r=1"></script>
+
+		
+		
+	</div>
+  </body>
+</html>
