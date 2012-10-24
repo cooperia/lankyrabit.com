@@ -17,9 +17,14 @@
 	
 	<!--[if IE]>
 	<style type="text/css">
-		#infoWrapper {
+		.rising {
 		background:transparent;
-		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#647b3c75,endColorstr=#647b3c75);
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff65,endColorstr=#ffffff65);
+	       zoom: 1;
+		}
+		.attached {
+		background:transparent;
+		filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ffffff80,endColorstr=#ffffff80);
 	       zoom: 1;
 		}
 	</style>
@@ -188,24 +193,6 @@
 		<script type="text/javascript" src="javascript/animations.js"></script>
 		<script src="javascript/history.js/scripts/bundled/html4+html5/jquery.history.js"></script>
 		<script src="javascript/jquery.waitforimages.js"></script>
-		<script type="text/javascript">
-			//Use history.js plugin for navigation - push state, load new content
-			History.Adapter.bind(window,'popstate',function(){ 
-			        var state = History.getState(); 
-					state = 'target='+state.data.state;
-					$.get('contents.php', state, function(data){
-						if(state == 'target=bubbles'){
-							clearInterval(spawnInterval);
-							$('#loading_zone').html(data).waitForImages(startBubbles());
-						}
-						else{
-							$('#loading_zone').html(data);
-							
-						}
-						
-					});
-			});
-		</script>
 		<script type="text/javascript" src="javascript/bubbles.js"></script>
     	<script type="text/javascript" src="javascript/javascript.js?r=1"></script>
 

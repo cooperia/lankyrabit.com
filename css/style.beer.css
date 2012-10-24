@@ -37,55 +37,21 @@ b
 }
 
 .attached {
-	/* Required for IE 5, 6, 7 */
-	/* ...or something to trigger hasLayout, like zoom: 1; */
 	width: 100%; 
-
-	/* Theoretically for IE 8 & 9 (more valid) */	
-	/* ...but not required as filter works too */
-	/* should come BEFORE filter */
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
-
-	/* This works in IE 8 & 9 too */
-	/* ... but also 5, 6, 7 */
 	filter: alpha(opacity=80);
-
-	/* Older than Firefox 0.9 */
 	-moz-opacity:0.8;
-
-	/* Safari 1.x (pre WebKit!) */
 	-khtml-opacity: 0.8;
-
-	/* Modern!
-	/* Firefox 0.9+, Safari 2?, Chrome any?
-	/* Opera 9+, IE 9+ */
 	opacity: 0.8;
 
 }
 
 .rising {
-	/* Required for IE 5, 6, 7 */
-	/* ...or something to trigger hasLayout, like zoom: 1; */
 	width: 100%; 
-
-	/* Theoretically for IE 8 & 9 (more valid) */	
-	/* ...but not required as filter works too */
-	/* should come BEFORE filter */
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
-
-	/* This works in IE 8 & 9 too */
-	/* ... but also 5, 6, 7 */
 	filter: alpha(opacity=65);
-
-	/* Older than Firefox 0.9 */
 	-moz-opacity:0.65;
-
-	/* Safari 1.x (pre WebKit!) */
 	-khtml-opacity: 0.65;
-
-	/* Modern!
-	/* Firefox 0.9+, Safari 2?, Chrome any?
-	/* Opera 9+, IE 9+ */
 	opacity: 0.65;
 }
 
@@ -130,4 +96,8 @@ b
 	font-weight:bold;
 	margin: 1em 0em;
 	color:#587498;
+}
+
+#bubbles_text p {
+	font-size:1.4em;
 }
