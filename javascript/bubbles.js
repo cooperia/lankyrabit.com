@@ -93,13 +93,13 @@
 			$('#'+current).removeClass('circle').width('30px').height('30px').append('<p id="'+current+'text" class="popText">Pop!</p>');
 
 			for(var i=0; i<4; i++){
-				$('#'+current).append('<div class="circle miniBub rising" id="'+current+i+'"></div>')
+				$('#'+current).append('<div class="circle miniBub rising" id="'+current+'_'+i+'"></div>')
 			}
 
 			//Animate the 4 small bubbles. Send each to a corner of the box.
 			var coords = [['0px','0px'], ['0px','30px'], ['30px','30px'], ['30px','0px']]
 			for(var i=0; i<4; i++){
-				$('#'+current+i).animate({
+				$('#'+current+'_'+i).animate({
 					top: coords[i][0],
 					left: coords[i][1]},
 					1000, 'swing', function(){
@@ -115,7 +115,7 @@
 
 		this.checkPos = function(bubble){
 			var that = bubble;
-			alert('Running');
+			alert('Running checkPos');
 			if(x > (space.getWidth()+space.getLeft()) || y > (space.getHeight()+space.getTop())){
 				$('#'+that.id).addClass('hidden');
 			}
