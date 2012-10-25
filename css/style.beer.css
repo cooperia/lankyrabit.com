@@ -23,15 +23,15 @@ b
     -webkit-border-radius: 999px;
     -moz-border-radius: 999px;
     border-radius: 999px;
-    behavior: url(pie/PIE.htc);
-	background: #333333; /* Old browsers */
+    behavior: url(PIE.htc);
+	background: #ffffff; /* Old browsers */
 	background: -moz-linear-gradient(-45deg,  #333333 0%, #ffffff 15%, #ffffff 77%, #ffffff 100%); /* FF3.6+ */
 	background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#333333), color-stop(15%,#ffffff), color-stop(77%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
 	background: -webkit-linear-gradient(-45deg,  #333333 0%,#ffffff 15%,#ffffff 77%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
 	background: -o-linear-gradient(-45deg,  #333333 0%,#ffffff 15%,#ffffff 77%,#ffffff 100%); /* Opera 11.10+ */
 	background: -ms-linear-gradient(-45deg,  #333333 0%,#ffffff 15%,#ffffff 77%,#ffffff 100%); /* IE10+ */
 	background: linear-gradient(135deg,  #333333 0%,#ffffff 15%,#ffffff 77%,#ffffff 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	
 	
 	
 }
@@ -39,6 +39,7 @@ b
 .attached {
 	width: 100%; 
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff80', endColorstr='#ffffff80',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	filter: alpha(opacity=80);
 	-moz-opacity:0.8;
 	-khtml-opacity: 0.8;
@@ -49,6 +50,7 @@ b
 .rising {
 	width: 100%; 
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=65)";
+	-ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff65', endColorstr='#ffffff65',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 	filter: alpha(opacity=65);
 	-moz-opacity:0.65;
 	-khtml-opacity: 0.65;

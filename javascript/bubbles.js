@@ -89,6 +89,7 @@
 			var that = bubble;
 			var current = that.id();
 			//alert('Popping has commenced');
+			$('#'+current).css({'left': (that.xStart()-10)+'px', 'top': (displaySpace.getTop()-10)+'px'});
 			//spawn 4 small bubbles, 'pop!', and expand the bubble container to a 30px square
 			$('#'+current).removeClass('circle').width('30px').height('30px').append('<p id="'+current+'text" class="popText">Pop!</p>');
 
