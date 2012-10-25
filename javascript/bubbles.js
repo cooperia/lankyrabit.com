@@ -21,7 +21,7 @@
 			return left;
 		};
 
-		//takes numerical, either or both
+		//Takes numerical, either or both. Accounts for display space size and position within mug.
 		this.setDim = function(height, width) {
 			if(height == null){
 				bwWidth = Math.floor(width*.622);
@@ -66,12 +66,11 @@
 		this.spawnimate = function(bubble){
 			var that = bubble;
 			var thatID = that.id();
+			//Spawn bubble at a pre-determined random location within the displayspace.
 			var dimEnd = Math.floor((Math.random()*10)+5);
-			//alert('Spawnimate id: '+thatID+' xStart: '+that.xStart()+' yStart: '+that.yStart()+' dimEnd: '+dimEnd);
-			//alert(that.xStart()-2.5);
 			$('#bubbleWrap').append('<div class="circle bubble_hidden attached bubble" id="'+thatID+'"></div>');
 			$('#'+thatID).css({'left': that.xStart()+'px', 'top': that.yStart()+'px'});
-			//alert('Spawnimate id: '+thatID+' xStart: '+that.xStart()+' yStart: '+that.yStart()+' dimEnd: '+dimEnd);
+			//Make the bubble visible and begin the animation sequence.
 			$('#'+thatID).removeClass('bubble_hidden').animate({
 				width: dimEnd+'px',
 				height: dimEnd+'px',
@@ -88,11 +87,9 @@
 		this.popBubble = function(bubble){
 			var that = bubble;
 			var current = that.id();
-			//alert('Popping has commenced');
 			$('#'+current).css({'left': (that.xStart()-10)+'px', 'top': (displaySpace.getTop()-10)+'px'});
-			//spawn 4 small bubbles, 'pop!', and expand the bubble container to a 30px square
+			//spawn 4 small bubbles, 'pop!', and expand the bubble container to a 30px square.
 			$('#'+current).removeClass('circle').width('30px').height('30px').append('<p id="'+current+'text" class="popText">Pop!</p>');
-
 			for(var i=0; i<4; i++){
 				$('#'+current).append('<div class="circle miniBub rising" id="'+current+'_'+i+'"></div>')
 			}
@@ -113,7 +110,8 @@
 				$('#'+current).remove();
 			});
 		}
-
+		
+		//This is a piece I would like to eventually use to hide bubbles outside the display space after a resize. It isn't currently being used.
 		this.checkPos = function(bubble){
 			var that = bubble;
 			alert('Running checkPos');
@@ -125,10 +123,14 @@
 
 	var spawnInterval;
 	var count = 1;
+	//Begin
 	 function startBubbles(){
+		//Wait for images and clear interval again just for good measure. =P
 		$('#bubbleWrap').waitForImages(function(){
 			clearInterval(spawnInterval);
+			//Create Display Space
 			var space = new DisplaySpace($('#bubbleWrap').height(), $('#bubbleWrap').width());
+			//Define delay for later (resizing)
 			var delay = (function(){
 			  var timer = 0;
 			  return function(afterResize, ms){
@@ -137,6 +139,7 @@
 			  };
 			})();
 
+			//Begin interval - Spawn new instance of Bubble, give it ID = count, count++.
 			spawnInterval = setInterval(function(){
 				var aBubble = new Bubble(count, space);
 				count++;
@@ -144,6 +147,7 @@
 				setTimeout(function() {aBubble.popBubble(aBubble)},Math.floor((Math.random()*30000)+10000));
 			}, 500);
 
+			//On resize - delay 500ms, then adjust space.
 			$(window).resize(function(){
 				delay(function(){
 					space.setDim($('#bubbleWrap').height(), $('#bubbleWrap').width());
