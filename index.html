@@ -1,17 +1,19 @@
 <!Doctype html>
-<html language="en">
+<html>
   <head>
     <title>Ian's Playground</title>
 	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+	<!-- enable HTML5 elements in IE7+8 -->
+	<!-- [if lt IE 9]>
+		<script type="text/javascript" src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
 	<link media="screen" type="text/css" rel="stylesheet" href="css/style.main.css" />
 	<link media="screen" type="text/css" rel="stylesheet" href="css/style.resume.css" />
 	<link media="screen" type="text/css" rel="stylesheet" href="css/style.projects.css" />
 	<link media="screen" type="text/css" rel="stylesheet" href="css/style.beer.css" />
 	
-	<!-- enable HTML5 elements in IE7+8 -->
-	<!-- [if lt IE 9]>
-	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+	
 	
 	
 	
@@ -30,6 +32,22 @@
 				font-size:2.4em;
 			}
 		}
+		
+		/*ie8*/
+		@media \0screen {
+		  img { 
+		  		width:inherit;
+				max-width:100%; 
+				width:auto;
+				height:auto;
+		  }
+		
+		  img#logo {
+			max-height:5em;
+			width:auto;
+			height:auto;
+		}
+		}
 	</style>
   </head>
   <body>
@@ -37,23 +55,24 @@
 		<div id="topFixed" class="wrapper fixed">
 			<div id="headWrapper" class="shadow">
 				<div id="header">
-					<figure><img src="images/R.gif" id="logo"></figure>
+					<figure><img src="images/R.gif" id="logo" alt="Logo"></figure>
 					<h1>Ian Cooper</h1>
 					<p id="lankyrabit">lankyrabit.com</p>
 				</div>
 			</div>
-			<nav role="navigation" class="shadow">
+			<nav role="navigation" id="navigation" class="shadow">
 				<ul>
 					<li><a href="otherProjects.html" id="other">Other Projects</a></li>
 					<li><a href="bubbles.html" id="bubbles">Bubbles</a></li>
 					<li><a href="resume.html" id="resume">Resume</a></li>
 					<li><a href="index.html" id="home">Home</a></li>
 				</ul>
+				<div class="clear"></div>
 			</nav>
 		</div>
 		<div id="contentWrapper" role="main">
 			<div id="loading_zone" class="leftFloat">
-				<div id="home">
+				<div id="homeWrapper">
 					<h2>Welcome to Ian Cooper's website!</h2>
 					<p class="index_text">I am a hillbilly raised in Eastern Washington. I brew my own beer, I hike, I climb, I run, but mostly, I sit in front of my computer. I grew up as the son of two Mathematicians. As such, I tend toward the nerdy. I love everything that gives my brain pause(imagine a brain with paws!). Give me a puzzle and I won't bother you until it is solved.</p>
 					<p class="index_text">Enough about what I AM, though. Let's talk about what I want to BE - at least in a professional sense. I love Front-End Web Development - despite everything Microsoft does to dissuade me. I have taught myself virtually everything that I know about it. I want to be part of a team that tackles projects of a much grander scale than those I have been involved in. I want to have a much better sense of the pitfalls ahead of me on any project, rather than constantly stumbling through them. Ultimately, I want to be an expert.</p>
@@ -63,9 +82,9 @@
 			</div>
 			<div id="buttons" class="rightFloat">
 				<a href="Resources/Resume.pdf.zip" ><p class="text_shadow">Download Resume</p></a>
-				<figure class="inactive"><a href="http://www.linkedin.com/pub/ian-cooper/1a/764/b28"><img  src="images/linkedin.png"></a></figure>
-				<figure class="inactive"><a href="https://github.com/cooperia"><img src="images/github.png"></a></figure>
-				<figure class="inactive"><a href="mailto:cooperia.ian@gmail.com"><img  src="images/mail.png"></a></figure>
+				<figure class="inactive"><a href="http://www.linkedin.com/pub/ian-cooper/1a/764/b28"><img  src="images/linkedin.png" alt="LinkedIn"></a></figure>
+				<figure class="inactive"><a href="https://github.com/cooperia"><img src="images/github.png" alt="Github"></a></figure>
+				<figure class="inactive"><a href="mailto:cooperia.ian@gmail.com"><img  src="images/mail.png" alt="Email"></a></figure>
 			</div>
 			<div class="clear"></div>
 		</div>

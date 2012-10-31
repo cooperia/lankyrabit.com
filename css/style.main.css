@@ -49,7 +49,10 @@ div {
 }
 
 figure img {
-	max-width:100%;
+	width:inherit;
+	max-width:100%; 
+	height:auto;
+	width:auto;
 }
 
 p {
@@ -100,10 +103,6 @@ div.clear {
 	line-height:1.4em;
 }
 
-figure img {
-	max-width:100%;
-}
-
 #wrapper {
 	width:100%;
 	background:#E6E6DC;
@@ -117,9 +116,11 @@ figure img {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	border-radius: 1em 1em 1em 1em; 
-	-moz-border-radius: 1em 1em 1em 1em; 
-	-webkit-border-radius: 1em 1em 1em 1em;
+	-moz-border-radius: 1em; 
+	-webkit-border-radius: 1em;
+	border-radius: 1em; 
+    behavior: url(PIE.htc);
+	width:15%;
 	
 }
 
@@ -138,12 +139,10 @@ figure img {
 
 #buttons figure.inactive {
 	max-width:95%;
+	width:auto;
+	height:auto;
 }
 
-
-#buttons {
-	width:15%;
-}
 
 
 #headWrapper {
@@ -163,7 +162,7 @@ figure img {
 	position:relative;
 }
 
-nav {
+#navigation {
 	position:relative;
 	max-width:96em;
 	min-width:60em;
@@ -172,27 +171,28 @@ nav {
 	padding:2em 2em 2.25em 2em;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	border-radius: 0em 0em 1em 1em; 
+	box-sizing: border-box; 
 	-moz-border-radius: 0em 0em 1em 1em; 
 	-webkit-border-radius: 0em 0em 1em 1em;
+	border-radius: 0em 0em 1em 1em;
+    behavior: url(PIE.htc);
 	z-index:999;
 }
 
 
-nav[role="navigation"] ul {
+#navigation ul {
 	list-style-type:none;
 	padding: 0 0 0 0;
 }
 
-nav[role="navigation"] ul li {
+#navigation ul li {
 	float:right;
 	margin: 0 0 0 5%;
 	width:15%;
 	text-align:right;
 }
 
-nav[role="navigation"] ul li a {
+#navigation ul li a {
 	font-family:helvetica, arial, sans-serif;
 	font-size:1.5em;
 	font-weight:bold;
@@ -220,6 +220,8 @@ nav[role="navigation"] ul li a {
 figure img#logo {
 	max-height:5em;
 	float:left;
+	width:auto;
+	height:auto;
 }
 
 
@@ -257,9 +259,10 @@ h3.projectTitle {
 	min-width:60em;
 	background: #ffffff;
 	margin:0em auto 2em auto;
-	border-radius: 1em; 
 	-moz-border-radius: 1em; 
 	-webkit-border-radius: 1em;
+	border-radius: 1em; 
+    behavior: url(PIE.htc);
 	padding: 2em 2em 2em 2em;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -267,6 +270,8 @@ h3.projectTitle {
 	color:#333333;
 	font-family:helvetica, arial, sans-serif;
 	line-height:1.5em;
+	position:relative;
+	z-index:0;
 }
 
 #contentWrapper p {

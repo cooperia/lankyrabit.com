@@ -2,7 +2,7 @@
 switch($_GET['target']){
 	case 'home':
 	?>
-	<div id="home">
+	<div id="homeWrapper">
 		<h2>Welcome to Ian Cooper's website!</h2>
 		<p class="index_text">I am a hillbilly raised in Eastern Washington. I brew my own beer, I hike, I climb, I run, but mostly, I sit in front of my computer. I grew up as the son of two Mathematicians. As such, I tend toward the nerdy. I love everything that gives my brain pause(imagine a brain with paws!). Give me a puzzle and I won't bother you until it is solved.</p>
 		<p class="index_text">Enough about what I AM, though. Let's talk about what I want to BE - at least in a professional sense. I love Front-End Web Development - despite everything Microsoft does to dissuade me. I have taught myself virtually everything that I know about it. I want to be part of a team that tackles projects of a much grander scale than those I have been involved in. I want to have a much better sense of the pitfalls ahead of me on any project, rather than constantly stumbling through them. Ultimately, I want to be an expert.</p>
@@ -226,7 +226,7 @@ switch($_GET['target']){
 						<a href="https://github.com/cooperia/Intro-and-Datastructures-HW"><figure><img src="images/C++.gif" class="box"></figure></a>
 					</dd>
 					<dd class="project_description box">
-						<p>If you are interested in looking at any of my homework from college, I have put all my assignments on Github.</p>
+						<p>If you are interested in looking at any of my ƒwork from college, I have put all my assignments on Github.</p>
 					</dd>
 					<div class="clear"></div>
 				</article>
