@@ -18,6 +18,10 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+html, body {
+	height:100%;
+}
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -104,7 +108,9 @@ div.clear {
 }
 
 #wrapper {
+	position:relative;
 	width:100%;
+	min-height:100%;
 	background:#E6E6DC;
 	padding:13em 0em 0em 0em;
 }
@@ -162,7 +168,7 @@ div.clear {
 	position:relative;
 }
 
-#navigation {
+nav {
 	position:relative;
 	max-width:96em;
 	min-width:60em;
@@ -179,20 +185,19 @@ div.clear {
 	z-index:999;
 }
 
-
-#navigation ul {
+nav ul {
 	list-style-type:none;
 	padding: 0 0 0 0;
 }
 
-#navigation ul li {
+nav ul li {
 	float:right;
 	margin: 0 0 0 5%;
 	width:15%;
 	text-align:right;
 }
 
-#navigation ul li a {
+nav ul li a {
 	font-family:helvetica, arial, sans-serif;
 	font-size:1.5em;
 	font-weight:bold;
@@ -258,7 +263,7 @@ h3.projectTitle {
 	max-width:96em;
 	min-width:60em;
 	background: #ffffff;
-	margin:0em auto 2em auto;
+	margin:0em auto 4em auto;
 	-moz-border-radius: 1em; 
 	-webkit-border-radius: 1em;
 	border-radius: 1em; 
@@ -281,10 +286,13 @@ h3.projectTitle {
 #footer {
 	background:#587498;
 	width:100%;
+	height:4em;
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	padding: 2em 0em 2em 0em;
+	position:absolute;
+	bottom:0;
 }
 
 #footer p {

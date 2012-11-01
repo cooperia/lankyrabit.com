@@ -5,8 +5,7 @@ switch($_GET['target']){
 	<div id="homeWrapper">
 		<h2>Welcome to Ian Cooper's website!</h2>
 		<p class="index_text">I am a hillbilly raised in Eastern Washington. I brew my own beer, I hike, I climb, I run, but mostly, I sit in front of my computer. I grew up as the son of two Mathematicians. As such, I tend toward the nerdy. I love everything that gives my brain pause(imagine a brain with paws!). Give me a puzzle and I won't bother you until it is solved.</p>
-		<p class="index_text">Enough about what I AM, though. Let's talk about what I want to BE - at least in a professional sense. I love Front-End Web Development - despite everything Microsoft does to dissuade me. I have taught myself virtually everything that I know about it. I want to be part of a team that tackles projects of a much grander scale than those I have been involved in. I want to have a much better sense of the pitfalls ahead of me on any project, rather than constantly stumbling through them. Ultimately, I want to be an expert.</p>
-		<p class="index_text">Wow, that got serious. <a href="http://imgur.com/gallery/omzJa">Here's</a> a picture of a guy in a panda costume.</p>
+		<p class="index_text">Enough about what I AM, though. Let's talk about what I want to BE - at least in a professional sense. I love Front-End Web Development - despite everything IE does to dissuade me. I have taught myself virtually everything that I know about it. I want to be part of a team that tackles projects of a much grander scale than those I have been involved in. I want to have a much better sense of the pitfalls ahead of me on any project, rather than constantly stumbling through them. Ultimately, I want to be an expert.</p>
 		<p class="index_text">Feel free to take a look around. The navigation should be fairly self-explanatory.</p>
 	</div>
 	<?
